@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty Characters</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Rick and Morty Character Explorer</h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by name..."
+          />
+          <select id="status-filter">
+            <option value="">All Statuses</option>
+            <option value="alive">Alive</option>
+            <option value="dead">Dead</option>
+            <option value="unknown">Unknown</option>
+          </select>
+          <select id="gender-filter">
+            <option value="">All Genders</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="genderless">Genderless</option>
+            <option value="unknown">Unknown</option>
+          </select>
+          <select id="species-filter">
+            <option value="">All Species</option>
+          </select>
+        </div>
+      </header>
+
+      <div id="characters-container" class="characters-grid">
+        <div class="loading">Loading characters...</div>
+      </div>
+
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </body>
+</html>
